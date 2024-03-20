@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            filter:invert(100%)  grayscale(100%) contrast(150%);
+            border: 2px solid black;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+   
+</body>
+<script>
+    let body = document.querySelector("body")
+    for(let i=1;i<=29;i++){
+        let img=document.createElement("img")
+        let line=document.createElement("hr")
+        let next=document.createElement("br")
+        img.setAttribute("src",`picture${i}.png`)
+        body.appendChild(img)
+        body.appendChild(line)
+        body.appendChild(next)
+        body.appendChild(next)
+        body.appendChild(next)
+    }
+    
+</script>
+</html>
